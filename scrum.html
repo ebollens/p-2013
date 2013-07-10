@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Introduction to SCRUM</title>
+
+        <meta name="description" content="This presentation introduces the key constituents of the SCRUM methodology.">
+        <meta name="author" content="Eric R. Bollens">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+                document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section>
+                    <h2>Introdution to</h2>
+                    <h1>SCRUM</h1>
+                    <h3>by Eric Bollens</h3>
+                    <p>
+                        <small>
+                            <a href="https://github.com/ebollens" target="_blank">ebollens [GitHub]</a> 
+                            / <a href="https://linkedin.com/in/ebollens" target="_blank">ebollens [LinkedIn]</a> 
+                            / <a href="http://twitter.com/ericbollens" target="_blank">@ericbollens [Twitter]</a>
+                        </small>
+                    </p>
+                </section>
+                
+                <section>
+                    <section>
+                        <h2>In software, we...</h2>
+                        <p class='fragment'>Plan</p>
+                        <p class='fragment'>Implement</p>
+                        <p class='fragment'>Test</p>
+                        <p class='fragment'>Demo</p>
+                    </section>
+                    <section>
+                        <h2>Waterfall</h2>
+                        <p class='fragment'>Is smooth if everything fits perfectly into place...</p>
+                        <p class='fragment'><strong>But how often does that actually happen?</strong></p>
+                        <p class='fragment'>Requirements evolve</p>
+                        <p class='fragment'>Roadblocks arise</p>
+                    </section>
+                    <section>
+                        <h2>Iterations</h2>
+                        <p class='fragment'>Feedback cycle between <strong>Product Owner</strong> and <strong>Team</strong></p>
+                        <p class='fragment'><strong>The shorter the cycle, the faster we know...</strong></p>
+                        <p class='fragment'>if we're doing the wrong thing</p>
+                        <p class='fragment'>if we're out of sync with our timeline</p>
+                        <p class='fragment'><em>SCRUM is a methodology for defining this cycle</em></p>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h2>Project Roles</h2>
+                    </section>
+                    <section>
+                        <h2>Product Owner</h2>
+                        <p class='fragment'>Vision of the project</p>
+                        <p class='fragment'>Interested in return-on-investment</p>
+                        <p class='fragment'><strong>Defines priorities and acceptance criteria</strong></p>
+                    </section>
+                    <section>
+                        <h2>Team Member</h2>
+                        <p class='fragment'>Responsible for a feature and reaching acceptance</p>
+                        <p class='fragment'>Self-organizes to get necessary work done</p>
+                        <p class='fragment'><strong>Creates and owns time estimates</strong></p>
+                    </section>
+                    <section>
+                        <h2>Scrum Master</h2>
+                        <p class='fragment'>Ensures project is progressing smoothly</p>
+                        <p class='fragment'>Makes sure team is equipped to get the job done</p>
+                        <p class='fragment'><strong>Facilitator of the team</strong></p>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h2>Organizing Work</h2>
+                    </section>
+                    <section>
+                        <h2>User Stories</h2>
+                        <p class='fragment'>Each <strong>user story</strong> encapsulates a feature</p>
+                        <p class="fragment"><em>
+                            As a <strong>(role)</strong>
+                            <span class='fragment'><br>I want <strong>(feature)</strong></span>
+                            <span class='fragment'><br>so that <strong>(benefit)</strong></span>
+                        </em></p>
+                        <p class='fragment'>Defined by <strong>product owner</strong></p>
+                        <p class='fragment tight'>along with acceptance criteria</p>
+                    </section>
+                    <section>
+                        <h2>Backlogs</h2>
+                        <p class='fragment'><strong>Product backlog</strong> is the sum of all user stories</p>
+                        <p class='fragment'><strong>Release backlog</strong> is a subset of user stories based on priority</p>
+                    </section>
+                    <section>
+                        <h2>Sprints</h2>
+                        <p class='fragment'>A set user stories from the current release backlog</p>
+                        <p class='fragment'>Each sprint should reach a &quot;ship-ready&quot; state</p>
+                        <p class='fragment padding-top'>Expected sprint duration is<br><code>time/velocity</code></p>
+                        <p class='fragment'><strong>Team</strong> defines expected time for each user story</p>
+                        <p class='fragment'>Velocity is estimated from previous sprints</p>
+                    </section>
+                    <section>
+                        <p class='fragment'>[IMAGE TO GO HERE]</p>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h2>Getting Work Done</h2>
+                    </section>
+                    <section>
+                        <h2>Story Sizing</h2>
+                        <p class="fragment">Estimates by story &quot;points&quot; or time</p>
+                        <p class="fragment">Smaller stories are easier to work with<br>
+                            so consider breaking big ones down</p>
+                        <p class="fragment">Product owner defines priority,<br>
+                            while team defines time</p>
+                    </section>
+                    <section>
+                        <h2>Sprint Sizing</h2>
+                        <p class="fragment">Typically ranges from two to thirty days</p>
+                        <p class="fragment">The shorter the release cycle, the shorter a sprint should be</p>
+                        <p class="fragment">Aim for between two and twelve sprints per release</p>
+                    </section>
+                    <section>
+                        <h2>Burndown</h2>
+                        <p class="fragment">The work is chunked up, but...</p>
+                        <p class="fragment tight"><em>How do we know if we're on track for the sprint?</em></p>
+                        <p class="fragment tight"><em>Are we on target for our release?</em></p>
+                        <p class='fragment'>A <strong>burndown chart</strong> provides<br>day-by-day measure of the work remaining:</p>
+                        <p class='fragment'><strong>Y-axis</strong> hours of work remaining<br>
+                            <span class='fragment'><strong>X-axis</strong> days in the sprint</span></p>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Burndown</h2>
+                        <!-- show image of burndown chart -->
+                        <p class='fragment'>[IMAGE TO GO HERE]</p>
+                        <p class='fragment'><strong>Burndown velocity</strong> is the slope of the graph</p>
+                        <p class='fragment'>Compare estimated completion date versus target</p>
+                    </section>
+                    <section>
+                        <h2>Running Late</h2>
+                        <p class='fragment'>Projections aren't always right</p>
+                        <p class='fragment'>This isn't always &quot;bad&quot;<br><strong class='fragment'>but it's something important to know!</strong></p>
+                        <p class='fragment'>Allows the team to make adjustments</p>
+                        <p class='fragment tight'><em>Add more resources to the team?</em><br><em class='fragment'>Adjust sprint and release completion times?</em><br><em class='fragment'>Revisit the scope of the project?</em></p>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h2>Communication</h2>
+                    </section>
+                    <section>
+                        <h2>Sprint Planning</h2>
+                        <p><strong>What will we do?</strong></p>
+                        <p class='tight'><strong>Product owner</strong> presents stories s/he would like in the sprint</p>
+                        <p class='tight'><strong>Team</strong> decides what they can commit to for the sprint</p>
+                        <p><strong>How will we do it?</strong></p>
+                        <p class='tight'><strong>Team</strong> breaks up stories into tasks</p>
+                        <p class='tight'><strong>Product owner</strong> is available for questions</p>
+                    </section>
+                    <section>
+                        <h2>Daily Scrum</h2>
+                        <p class='fragment'>Daily &quot;weather report&quot;</p>
+                        <p class='fragment'>Each team member covers:<br><em>
+                            <span class='fragment'>Work completed since last meeting</span><br>
+                            <span class='fragment'>Work to be done before next meeting</span><br>
+                            <span class='fragment'>Any obstacles encountered</span></em></p>
+                        <p class='fragment'>Ensures the team is in sync</p>
+                        <p class='fragment'>Run by the <strong>SCRUM Master</strong>, but for the <strong>Team</strong></p>
+                        <p class='fragment'>Timeboxed and notes are taken</p>
+                    </section>
+                    <section>
+                        <h2>Sprint Retrospective</h2>
+                        <p class='fragment'>When a sprint comes to completion, team reflects on...</p>
+                        <p class='fragment tight'>What went right</p>
+                        <p class='fragment tight'>Areas for improvement</p>
+                        <p class='fragment'>Scrum is an agile method that needs<br><strong>constant tweaking and improvement</strong></p>
+                    </section>
+                </section>
+
+                <section>
+                    <h1>THANK YOU</h1>
+                    <h3>Any Questions?</h3>
+                    <p>
+                        <small>
+                            <a href="https://github.com/ebollens" target="_blank">ebollens [GitHub]</a> 
+                            / <a href="https://linkedin.com/in/ebollens" target="_blank">ebollens [LinkedIn]</a> 
+                            / <a href="http://twitter.com/ericbollens" target="_blank">@ericbollens [Twitter]</a>
+                        </small>
+                    </p>
+                </section>
+
+            </div>
+
+        </div>
+        
+        <style>
+            .slides p {
+                padding-top: 0.25em;
+            }
+            .slides p.tight {
+                padding-top: 0;
+                margin-top: 0;
+            }
+        </style>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                        // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                        // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
