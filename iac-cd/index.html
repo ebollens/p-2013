@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Stop Fighting Fires! Consistency and Automation through Infrastructure-as-Code and Continuous Deployment</title>
+
+        <meta name="description" content="This presentation discusses how the concepts of infrastructure-as-code and continuous integration can dramatically cut down firefighting that software teams have to regularly do during development and deployment.">
+        <meta name="author" content="Eric R. Bollens">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="../css/reveal.min.css">
+        <link rel="stylesheet" href="../css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="../lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+                document.write( '<link rel="stylesheet" href="../css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="../lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section>
+                    <h2>Consistency and Automation</h2>
+                    <h1>Stop Fighting Fires</h1>
+                    <h3>by Eric Bollens</h3>
+                    <p>
+                        <small>
+                            <a href="https://github.com/ebollens" target="_blank">ebollens [GitHub]</a> 
+                            / <a href="https://linkedin.com/in/ebollens" target="_blank">ebollens [LinkedIn]</a> 
+                            / <a href="http://twitter.com/ericbollens" target="_blank">@ericbollens [Twitter]</a>
+                        </small>
+                    </p>
+                </section>
+                
+                <section>
+                    <section>
+                        <h2>Why Can't I Just Dev?</h2>
+                    </section>
+                    <section>
+                        <p class='fragment'><em>We're deploying the release next week...
+                                <br><strong class='fragment'>Don't change anything!</strong></em></p>
+                        <p class='fragment'><em>We can't deploy your change yet...
+                                <br><strong class='fragment'>Next release isn't for three months.</strong></em></p>
+                        <p class='fragment'><em>Your commit broke everything...
+                                <br><strong class='fragment'>Did you actually test it?</strong></em></p>
+                        <p class='fragment'><em>We did everything on your checklist...
+                                <br><strong class='fragment'>But your app isn't working!</strong></em></p>
+                    </section>
+                    <section>
+                        <h2>Can we do better?</h2>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h3>Establishing a baseline</h3>
+                        <h2>Infrastructure-as-Code</h2>
+                    </section>
+                    <section>
+                        <h2>Defining an Environment</h2>
+                        <p class='fragment'>Traditionally through a <strong>checklist</strong> or <strong>image</strong></p>
+                        <p class='fragment'><em>In the best case...</em>
+                            <br><span class='fragment'>Process is followed</span>
+                            <br><span class='fragment'>Everything is kept up-to-date</span>
+                        </p>
+                        <p class='fragment'><strong>But how often does this actually happen?</strong></p>
+                    </section>
+                    <section>
+                        <h2>Inconsistencies Breed Chaos</h2>
+                        <p class='fragment'>Hard to make configuration changes</p>
+                        <p class='fragment'>Systems fall out of sync</p>
+                        <p class='fragment'>Mistakes are made</p>
+                        <p class='fragment'><strong>Different results in different places</strong></p>
+                    </section>
+                    <section>
+                        <h2>Script the Pain Away</h2>
+                        <p class='fragment'>Model your process through scripts</p>
+                        <p class='fragment'>Break down the wall between dev and ops</p>
+                    </section>
+                    <section>
+                        <h2>Infrastructure-as-Code</h2>
+                        <p class='fragment'>Number of great products out there...</p>
+                        <p>
+                            <a href='http://cfengine.com' target='_blank' class='fragment'>CFEngine</a>
+                            <br><a href='http://projects.puppetlabs.com/projects/puppet' target='_blank' class='fragment'>Puppet</a>
+                            <br><a href='http://www.opscode.com/chef/' target='_blank' class='fragment'>Chef</a>
+                            <br><a href='http://saltstack.com/community.html' target='_blank' class='fragment'>SaltStack</a>
+                            <br><em class='fragment'>and many more...</em>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Why Not Shell Script?</h2>
+                        <p class='fragment'>You want a solution that is...</p>
+                        <p class='fragment'><em>Modular, Cooperative, Composable,
+                                <br><span class='fragment'>Flexible, Extensible, Repeatable,</span>
+                                <br><span class='fragment'>Declarative, Abstract, Idempotent, Convergent</span></em></p>
+                        <p class='fragment'>We're trying to save time so...<br><strong class='fragment'>Don't reinvent the wheel!</strong></p>
+                    </section>
+                    <section>
+                        <h3>Okay, so I've got it running...</h3>
+                        <h2>Now what?</h2>
+                    </section>
+                    <section>
+                        <h2>Use Universally</h2>
+                        <p class='fragment'>No fringe environments</p>
+                        <p class='fragment'>Sync frequently</p>
+                    </section>
+                    <section>
+                        <h2>Be Permissive</h2>
+                        <p class='fragment'>Give developers access</p>
+                        <p class='fragment'><em>"Devs don't touch my infrastructure!"</em></p>
+                        <p class='fragment'>It's an unfounded fear devs are more fallible</span></p>
+                        <p class='fragment'>Bake an audit into the release process</p>
+                        <p class='fragment'><strong>Automate the fear away!</strong></p>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h3>Deploying without Fear</h3>
+                        <h2>Continuous Integration</h2>
+                    </section>
+                    <section>
+                        <h2>Everyone Makes Mistakes</h2>
+                        <p class='fragment'>If you're not writing tests<br><strong>write them!</strong></p>
+                        <p class='fragment'>If you're writing tests<br><strong>use them!</strong></p>
+                        <p class='fragment'>True for infrastructure and applications</p>
+                    </section>
+                    <section>
+                        <h2>Introducing Tests</h2>
+                        <p class='fragment'>Whether you have tests now or not...</p>
+                        <p class='fragment'><strong>When something breaks, write a test!</strong></p>
+                        <p class='fragment'>Over time, consider <strong>test-driven development</strong></p>
+                    </section>
+                    <section>
+                        <h2>Testing your Infrastructure</h2>
+                        <p class='fragment'>Infrastructure-as-code is <strong>repeatable</strong></p>
+                        <p class='fragment'>Fire up a VM in a known state and test the changes</p>
+                        <p class='fragment'><a href='http://www.vagrantup.com'>Vagrant</a> is a great tool for doing this locally</p>
+                        <p class='fragment'>No different than application testing...
+                            <br><strong class='fragment'>Automate the testing process!</strong></p>
+                    </section>
+                    <section>
+                        <h2>Continuous Integration</h2>
+                        <p class='fragment'>Centralized automation for <strong>running</strong> and <strong>monitoring</strong> tests</p>
+                        <p class='fragment'>Helps catch failing tests quickly</p>
+                        <p class='fragment'>Run after every commit</p>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h3>Tighten the Release Cycle</h3>
+                        <h2>Continuous Deployment</h2>
+                    </section>
+                    <section>
+                        <h2>Continuous Deployment</h2>
+                        <p class='fragment'>With continuous integration after every commit...
+                            <br><span class='fragment'>we get build products after every commit</span></p>
+                        <p class='fragment'><strong>Why not deploy a passing build immediately?</strong></p>
+                        <p class='fragment'>This means smaller and quicker batches
+                            <br><em class='fragment'>which reduce risk and overhead</em>
+                        </p>
+                        <p class='fragment'>But there's a bit more we'll need for assurance...</p>
+                    </section>
+                    <section>
+                        <h2>Production Line</h2>
+                        <p class='fragment'>If a test fails...</p>
+                        <p>
+                            <em class='fragment'>reject the commit</em>
+                            <br><em class='fragment'>report back</em>
+                            <br><em class='fragment'>halt new commits</em>
+                        </p>
+                        <p class='fragment'>We want to be both <strong>fast</strong> and <strong>reliable</strong></p>
+                        <p class='fragment'><em>If we're failing tests, we're going too fast to be reliable</em></p>
+                    </section>
+                    <section>
+                        <h2>Deployment Script</h2>
+                        <p class='fragment'>Pushes new builds into production</p>
+                        <p class='fragment'>Obeys the <strong>production line</strong></p>
+                        <p class='fragment'>If tests are failing...<br>no deployment until resolved</p>
+                        <p class='fragment'>Otherwise...<br>deploy the changes</p>
+                    </section>
+                    <section>
+                        <h2>Real-time Alerting</h2>
+                        <p class='fragment'>Even if tests pass, things may still go wrong</p>
+                        <p class='fragment'>Quick and accessible feedback via
+                            <br><strong>monitoring</strong> and <strong>user reporting</strong></p>
+                        <p class='fragment'>Define an escalation process</p>
+                        <p class='fragment'>If the pager goes off, <strong>production line halts</strong></p>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h2>What Have We Got?</h2>
+                        <p class='fragment'>Consistent environments</p>
+                        <p class='fragment'>Less manual work</p>
+                        <p class='fragment'>Faster feedback cycles</p>
+                        <p class='fragment'>Real-world metrics</p>
+                        <p class='fragment'>Quicker issue response</p>
+                        <p class='fragment'>Smaller batches</p>
+                    </section>
+                </section>
+
+                <section>
+                    <h1>THANK YOU</h1>
+                    <h3>Any Questions?</h3>
+                    <p><br><a href="http://ebollens.github.io/presentations/iac-cd" target="_blank">http://ebollens.github.io/presentations/iac-cd</a></p>
+                    <br>
+                    <p>
+                        <small>
+                            <a href="https://github.com/ebollens" target="_blank">ebollens [GitHub]</a> 
+                            / <a href="https://linkedin.com/in/ebollens" target="_blank">ebollens [LinkedIn]</a> 
+                            / <a href="http://twitter.com/ericbollens" target="_blank">@ericbollens [Twitter]</a>
+                        </small>
+                    </p>
+                </section>
+
+            </div>
+
+        </div>
+        
+        <style>
+            .slides p {
+                padding-top: 0.25em;
+            }
+            .slides p.tight {
+                padding-top: 0;
+                margin-top: 0;
+            }
+        </style>
+
+        <script src="../lib/js/head.min.js"></script>
+        <script src="../js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                        { src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: '../plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                        { src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                        { src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                        // { src: '../plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                        // { src: '../plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
