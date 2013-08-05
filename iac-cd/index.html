@@ -52,20 +52,17 @@
                 
                 <section>
                     <section>
-                        <h2>Why Can't I Just Dev?</h2>
+                        <h2>Why Can't We Just Dev?</h2>
                     </section>
                     <section>
-                        <p class='fragment'><em>We're deploying the release next week...
-                                <br><strong class='fragment'>Don't change anything!</strong></em></p>
-                        <p class='fragment'><em>We can't deploy your change yet...
-                                <br><strong class='fragment'>Next release isn't for three months.</strong></em></p>
+                        <p><em>We did everything on your checklist...
+                                <br><strong>But your app isn't working!</strong></em></p>
                         <p class='fragment'><em>Your commit broke everything...
-                                <br><strong class='fragment'>Did you actually test it?</strong></em></p>
-                        <p class='fragment'><em>We did everything on your checklist...
-                                <br><strong class='fragment'>But your app isn't working!</strong></em></p>
-                    </section>
-                    <section>
-                        <h2>Can we do better?</h2>
+                                <br><strong>Did you actually test it?</strong></em></p>
+                        <p class='fragment'><em>We're deploying the release next week...
+                                <br><strong>Don't change anything!</strong></em></p>
+                        <p class='fragment'><em>We can't deploy your change yet...
+                                <br><strong>Next release isn't for three months.</strong></em></p>
                     </section>
                 </section>
                 
@@ -77,59 +74,45 @@
                     <section>
                         <h2>Defining an Environment</h2>
                         <p class='fragment'>Traditionally through a <strong>checklist</strong> or <strong>image</strong></p>
-                        <p class='fragment'><em>In the best case...</em>
-                            <br><span class='fragment'>Process is followed</span>
-                            <br><span class='fragment'>Everything is kept up-to-date</span>
+                        <p class='fragment'>In the best case...
+                            <br><em class='fragment'>Process is followed accurately</em>
+                            <br><em class='fragment'>Nodes are kept in sync</em>
                         </p>
                         <p class='fragment'><strong>But how often does this actually happen?</strong></p>
                     </section>
                     <section>
-                        <h2>Inconsistencies Breed Chaos</h2>
-                        <p class='fragment'>Hard to make configuration changes</p>
-                        <p class='fragment'>Systems fall out of sync</p>
-                        <p class='fragment'>Mistakes are made</p>
+                        <h2>Inconsistencies</h2>
+                        <p class='fragment'>
+                            Changes must be comprehensive and without error</p>
+                        <p><em class='fragment'>Mistakes are made</em>
+                            <br><em class='fragment'>Systems fall out of sync</em></p>
                         <p class='fragment'><strong>Different results in different places</strong></p>
                     </section>
                     <section>
                         <h2>Script the Pain Away</h2>
                         <p class='fragment'>Model your process through scripts</p>
-                        <p class='fragment'>Break down the wall between dev and ops</p>
+                        <p class='fragment'><em>Modular, Cooperative, Composable,
+                                <br><span class='fragment'>Flexible, Extensible,</span>
+                                <br><span class='fragment'>Declarative, Abstract,</span>
+                                <br><span class='fragment'>Repeatable, Idempotent, Convergent</span></em></p>
                     </section>
                     <section>
                         <h2>Infrastructure-as-Code</h2>
-                        <p class='fragment'>Number of great products out there...</p>
-                        <p>
-                            <a href='http://cfengine.com' target='_blank' class='fragment'>CFEngine</a>
-                            <br><a href='http://projects.puppetlabs.com/projects/puppet' target='_blank' class='fragment'>Puppet</a>
-                            <br><a href='http://www.opscode.com/chef/' target='_blank' class='fragment'>Chef</a>
-                            <br><a href='http://saltstack.com/community.html' target='_blank' class='fragment'>SaltStack</a>
-                            <br><em class='fragment'>and many more...</em>
+                        <p class='fragment'>
+                            <a href='http://cfengine.com' target='_blank'>CFEngine</a>
+                            <br><a href='http://projects.puppetlabs.com/projects/puppet' target='_blank'>Puppet</a>
+                            <br><a href='http://www.opscode.com/chef/' target='_blank'>Chef</a>
+                            <br><a href='http://saltstack.com/community.html' target='_blank'>SaltStack</a>
                         </p>
                     </section>
                     <section>
-                        <h2>Why Not Shell Script?</h2>
-                        <p class='fragment'>You want a solution that is...</p>
-                        <p class='fragment'><em>Modular, Cooperative, Composable,
-                                <br><span class='fragment'>Flexible, Extensible, Repeatable,</span>
-                                <br><span class='fragment'>Declarative, Abstract, Idempotent, Convergent</span></em></p>
-                        <p class='fragment'>We're trying to save time so...<br><strong class='fragment'>Don't reinvent the wheel!</strong></p>
-                    </section>
-                    <section>
-                        <h3>Okay, so I've got it running...</h3>
-                        <h2>Now what?</h2>
-                    </section>
-                    <section>
-                        <h2>Use Universally</h2>
-                        <p class='fragment'>No fringe environments</p>
-                        <p class='fragment'>Sync frequently</p>
-                    </section>
-                    <section>
-                        <h2>Be Permissive</h2>
-                        <p class='fragment'>Give developers access</p>
-                        <p class='fragment'><em>"Devs don't touch my infrastructure!"</em></p>
-                        <p class='fragment'>It's an unfounded fear devs are more fallible</span></p>
-                        <p class='fragment'>Bake an audit into the release process</p>
-                        <p class='fragment'><strong>Automate the fear away!</strong></p>
+                        <h2>Breaking down the Walls</h2>
+                        <p class="fragment">When used universally,
+                            <br>completely consistent environment</p>
+                        <p class='fragment'>When devs contribute directly,
+                            <br>changes aren't lost in translation</p>
+                        <p class="fragment">Because it's code,
+                            <br>no different than the software lifecycle</p>
                     </section>
                 </section>
                 
@@ -140,29 +123,31 @@
                     </section>
                     <section>
                         <h2>Everyone Makes Mistakes</h2>
-                        <p class='fragment'>If you're not writing tests<br><strong>write them!</strong></p>
-                        <p class='fragment'>If you're writing tests<br><strong>use them!</strong></p>
-                        <p class='fragment'>True for infrastructure and applications</p>
+                        <p class='fragment'>So everyone should write tests</p>
+                        <p class='fragment'>If you're writing tests,<br><strong>use them</strong></p>
+                        <p class='fragment'>If you're not writing tests,<br><strong>write them</strong></p>
+                        <p class='fragment'>Whether you have tests now or not,
+                        <br><strong>when something breaks, write a test</strong></p>
                     </section>
                     <section>
-                        <h2>Introducing Tests</h2>
-                        <p class='fragment'>Whether you have tests now or not...</p>
-                        <p class='fragment'><strong>When something breaks, write a test!</strong></p>
-                        <p class='fragment'>Over time, consider <strong>test-driven development</strong></p>
+                        <h2>Testing Infrastructure</h2>
+                        <p class='fragment'>When coding an infrastructure,
+                            <br><span class='fragment'>code tests for the infrastructure</span></p>
+                        <p>
+                            <em class='fragment'>Set up initial state</em>
+                            <br><em class='fragment'>Run the code</em>
+                            <br><em class='fragment'>Test the outcomes</em></p>
+                        <p class='fragment'>And just like testing code,
+                            <br><strong class='fragment'>automate the testing process!</strong></p>
                     </section>
                     <section>
-                        <h2>Testing your Infrastructure</h2>
-                        <p class='fragment'>Infrastructure-as-code is <strong>repeatable</strong></p>
-                        <p class='fragment'>Fire up a VM in a known state and test the changes</p>
-                        <p class='fragment'><a href='http://www.vagrantup.com'>Vagrant</a> is a great tool for doing this locally</p>
-                        <p class='fragment'>No different than application testing...
-                            <br><strong class='fragment'>Automate the testing process!</strong></p>
-                    </section>
-                    <section>
+                        <br>
                         <h2>Continuous Integration</h2>
                         <p class='fragment'>Centralized automation for <strong>running</strong> and <strong>monitoring</strong> tests</p>
-                        <p class='fragment'>Helps catch failing tests quickly</p>
-                        <p class='fragment'>Run after every commit</p>
+                        <p><em class='fragment'>Run after every commit</em>
+                            <br><em class='fragment'>Catch failing tests quickly</em>
+                        </p>
+                        <p class='fragment'><strong>Quick feedback cycle</strong></p>
                     </section>
                 </section>
                 
@@ -173,31 +158,33 @@
                     </section>
                     <section>
                         <h2>Continuous Deployment</h2>
-                        <p class='fragment'>With continuous integration after every commit...
+                        <p class='fragment'>With continuous integration,
                             <br><span class='fragment'>we get build products after every commit</span></p>
                         <p class='fragment'><strong>Why not deploy a passing build immediately?</strong></p>
-                        <p class='fragment'>This means smaller and quicker batches
-                            <br><em class='fragment'>which reduce risk and overhead</em>
-                        </p>
-                        <p class='fragment'>But there's a bit more we'll need for assurance...</p>
+                    </section>
+                    <section>
+                        <h2>Smaller Batches</h2>
+                        <p class='fragment'>Reduce release complexity</p>
+                        <p class='fragment'>Reduce feedback cycle times</p>
+                        <p class='fragment'>Reduce product risk</p>
                     </section>
                     <section>
                         <h2>Production Line</h2>
-                        <p class='fragment'>If a test fails...</p>
+                        <p class='fragment'>When integration tests run, if any fail:</p>
                         <p>
                             <em class='fragment'>reject the commit</em>
                             <br><em class='fragment'>report back</em>
                             <br><em class='fragment'>halt new commits</em>
                         </p>
                         <p class='fragment'>We want to be both <strong>fast</strong> and <strong>reliable</strong></p>
-                        <p class='fragment'><em>If we're failing tests, we're going too fast to be reliable</em></p>
+                        <p class='fragment'>If we're failing tests, we're going too fast to be reliable</p>
                     </section>
                     <section>
                         <h2>Deployment Script</h2>
                         <p class='fragment'>Pushes new builds into production</p>
                         <p class='fragment'>Obeys the <strong>production line</strong></p>
-                        <p class='fragment'>If tests are failing...<br>no deployment until resolved</p>
-                        <p class='fragment'>Otherwise...<br>deploy the changes</p>
+                        <p class='fragment'>If tests are failing,<br>no deployment until resolved</p>
+                        <p class='fragment'>Otherwise,<br>deploy the changes</p>
                     </section>
                     <section>
                         <h2>Real-time Alerting</h2>
@@ -213,11 +200,22 @@
                     <section>
                         <h2>What Have We Got?</h2>
                         <p class='fragment'>Consistent environments</p>
-                        <p class='fragment'>Less manual work</p>
-                        <p class='fragment'>Faster feedback cycles</p>
-                        <p class='fragment'>Real-world metrics</p>
-                        <p class='fragment'>Quicker issue response</p>
+                        <p class='fragment'>Automated processes</p>
                         <p class='fragment'>Smaller batches</p>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h2>Related Sessions</h2>
+                        <div class='fragment'>
+                        <p style='font-size:0.9em;'><strong><a href='https://uccsc.uci.edu/sessions/using-automation-keep-your-development-teams-sanity' target='_blank'>Using Automation to Keep your Development Team's Sanity</a></strong>
+                            <br>Seth Roby / Aug 5 11:20 - 11:50 / Emerald Bay Room D</p>
+                        </div>
+                        <div class='fragment'>
+                        <p style='font-size:0.9em;'><strong><a href='https://uccsc.uci.edu/sessions/vagrant-puppet-used-ensure-consistent-developer-environment' target='_blank'>Vagrant &amp; Puppet Used to Ensure a Consistent Environment</a></strong>
+                            <br>Jonathan Johnson / Aug 5 3:50 - 4:20 / Emerald Bay Room C</p>
+                        </div>
                     </section>
                 </section>
 
