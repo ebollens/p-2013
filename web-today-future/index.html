@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>The Web, Today and the Future</title>
+
+        <meta name="description" content="From the expressive semantics of HTML 5 to the presentational power of CSS 3 to the rich interactivity of Javascript and the HTML 5 APIs, the modern web is an exciting, albeit complex environment. This presentation discusses the demographics, standard, practices and technologies of today, as well as where we are headed as this rich environment continues to grow and evolve.">
+        <meta name="author" content="Eric R. Bollens">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="../css/reveal.min.css">
+        <link rel="stylesheet" href="../css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="../lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+                document.write( '<link rel="stylesheet" href="../css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="../lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section>
+                    <h1>The Web</h1>
+                    <h2>Today and the Future</h2>
+                    <h3 style="padding-top:48px;">by Eric Bollens</h3>
+                    <p>
+                        <small>
+                            <a href="https://github.com/ebollens" target="_blank">ebollens [GitHub]</a> 
+                            / <a href="https://linkedin.com/in/ebollens" target="_blank">ebollens [LinkedIn]</a> 
+                            / <a href="http://twitter.com/ericbollens" target="_blank">@ericbollens [Twitter]</a>
+                        </small>
+                    </p>
+                </section>
+                
+                <section>
+                    
+                    <section>
+                        <h1>In the Beginning</h1>
+                    </section>
+                    
+                    <section>
+                        <h2>A Vision from 1970</h2>
+                        <p class="fragment"><em>
+                            Imagine a console in your office... combining the features of a Touch-Tone telephone, a television set, a Xerox machine, and a small electronic computer.<span style="font-size:2px;"><br></span><span class="fragment">Turned into a system of synchronous satellites, this console will bring the accumulated knowledge of the world to your fingertips.</span>
+                        </em></p>
+                        <p class="fragment"><cite>Arthur C. Clark, Popular Science, May 1970</cite></p>
+                    </section>
+                    
+                    <section>
+                        <h2>A Proposal from 1989</h2>
+                        <p class="fragment"><img src="img/1989-proposal.gif"></p>
+                        <p class="fragment">Tim Berners-Lee, <em>Information Management: A Proposal</em>, CERN, March 1989</p>
+                    </section>
+                    
+                    <section>
+                        <h2>An Implementation in 1990</h2>
+                        <p class="fragment"><strong>WorldWideWeb: Proposal for a HperTexts Project</strong>
+                            <br>Tim Berners-Lee and Robert Cilliau, November 1990</p>
+                        <p class="fragment"><strong>Marriage of hypertext and the Internet</strong></p>
+                        <p class="fragment"><em>
+                            UDI - Globally unique identifiers for resources
+                            <br><span class="fragment">HTML - HyperText Markup Language</span>
+                            <br><span class="fragment">HTTP - Hypertext Transfer Protocol</span>
+                        </em></p>
+                        <p class="fragment">By Christmas, the first implementation was done</p>
+                    </section>
+                    
+                    <section>
+                        <h2>A GUI in 1993</h2>
+                        <p class="fragment"><strong>Mosaic Web Browser</strong></p>
+                        <p class="fragment">Not just text, but also media</span></p>
+                    </section>
+                    
+                    <section>
+                        <h2>A Foundation in 1994</h2>
+                        <p class="fragment"><strong>World Wide Web Consortium (W3C)</strong></p>
+                        <p class="fragment">Standards based on royalty-free technology<br><span class="fragment">so they could be adopted by anyone</span></p>
+                    </section>
+                    
+                </section>
+                
+                <section>
+                    
+                    <section>
+                        <h1>Arriving at Today</h1>
+                    </section>
+                    
+                    <section>
+                        <h2>The Web is Not Optional</h2>
+                        <p class="fragment">By the late 1990's, almost every company had a website</p>
+                        <p class="fragment"><strong>Free publishing and marketing medium</strong></p>
+                    </section>
+                    
+                    <section>
+                        <h2>The Dot-Com Era</h2>
+                        <p class="fragment">Low interest rates and new technology</p>
+                        <p class="fragment">Ideas bought for novelty, not business models</p>
+                        <p class="fragment"><strong>Boom turns to bust<br><span class="fragment">but not all is lost</span></strong></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Web 2.0</h2>
+                        <p class="fragment">Borne from dot-com successes<br><em>Amazon, eBay, Paypal, Google, Wikipedia, etc.</em></p>
+                        <p class="fragment">Rich Internet Applications<br><span class="fragment">Web-oriented Architecture</span><br><span class="fragment">Social Web</span></p>
+                        <p class="fragment"><strong>From information to interaction</strong></p>
+                        <p class='fragment'>Captured by Andrew McAfee's SLATES:<br>
+                        <span class='fragment'><em>Search<span>, Links</span><span>, Authoring</span><span>, Tags</span><span>, Extensions</span><span>, Signals</span></em></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Ubiquitous Web</h2>
+                        <p class="fragment"><strong>Wikis</strong> for information
+                            <br><span class="fragment"><strong>Social Networks</strong> for communication</span>
+                            <br><span class="fragment"><strong>Blogs and Podcasts</strong> for publishing</span>
+                            <br><span class="fragment"><strong>Learning Management Systems</strong> for education</span>
+                            <br><span class="fragment"><strong>Online Stores</strong> for commerce</span></p>
+                        <p class="fragment"><strong>Anywhere and everywhere</strong><br>at home... in the office... throughout the world</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Rise of the Mobile Web</h2>
+                        <p class="fragment">PocketWeb for Apple Newton</p>
+                        <p class="fragment">Nokia 9000 Communicator on Sonera or Radiolinja</p>
+                        <p class="fragment">WML, WAP and XHTML Mobile Profile</p>
+                        <p class="fragment">Touch screens and full-featured web browsers</p>
+                    </section>
+                    
+                    <section>
+                        <p><img src='img/mobile-as-percent-of-total.png'></p>
+                    </section>
+                    
+                    <section>
+                        <p><img src='img/mobile-growth-versus-others.jpg'></p>
+                    </section>
+                    
+                    <section>
+                        <p><img src='img/mobile-inflection-point.jpg'></p>
+                    </section>
+                    
+                </section>
+                
+                <section>
+                    
+                    <section>
+                        <h1>The Web of Today</h1>
+                    </section>
+                    
+                    <section>
+                        <h2>Mobile Presence</h2>
+                        <p class='fragment'><strong>Mobile is now a necessity</strong></p>
+                        <p class="fragment">Native Apps
+                            <br><em>iOS, Android, Blackberry, Windows Phone, etc.</em></p>
+                        <p class="fragment">Mobile Web Apps
+                            <br><em>jQuery Mobile, Sencha Touch, MWF, etc.</em></p>
+                        <p class="fragment">Hybrid Apps
+                            <br><em>PhoneGap, Titanium Appcelerator, etc.</em></p>
+                        <p class="fragment">Responsive Web Design
+                            <br><em>Twitter Bootstrap, Foundation, WebBlocks, etc.</em></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Abolish the Device Barrier</h2>
+                        <p class="fragment">Responsive is a start<br><strong class='fragment'>but there's still a lot of work to be done!</strong></p>
+                        <p class="fragment">New wave of technologies on the horizon
+                            <br><em class="fragment">IndieUI, Web Intents, etc.</em></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Web Platform is Everywhere</h2>
+                        <p class="fragment">Browsers are getting better</p>
+                        <p class="fragment">Mobile, tablet, desktop and more</p>
+                        <p class="fragment">Offline app support</p>
+                        <p class="fragment">Breaking out of the browser</p>
+                    </section>
+                    
+                    <section>
+                        <p><img src='img/html5-shirt.jpg'> <img src='img/html5-im-the-future.jpg'></p>
+                    </section>
+                    
+                </section>
+                
+                <section>
+                    
+                    <section>
+                        <h1>Today's Challenges</h1>
+                    </section>
+                    
+                    <section>
+                        <h2>Offline Support</h2>
+                        <p class="fragment">Appcache is challenging</p>
+                        <div class="fragment">
+                        <blockquote>appcache is based upon a number of high-level and faulty assumptions about how applications will want to cache data</blockquote>
+                        <p><small>Jake Archibald, Application Cache is a D#%$@bag, May 2012</small></p>
+                        </div>
+                        <p class="fragment">WebSQL was abandoned</p>
+                        <p class="fragment">IndexedDB is harder for many to grasp</p>
+                        <p class="fragment">Local Storage is in flux</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Device Feature</h2>
+                        <p class="fragment">Not all browsers have or expose native features</p>
+                        <p class="fragment">Not all devices have certain native features</p>
+                        <div class="fragment">
+                        <p><strong>Slew of new specs starting to provide access</strong></p>
+                        <p><em>Media Capture, Touch Events, Vibration API, Web Notifications, File API, Contacts API, Calendar API, Geolocation API, DeviceOrientation Event, Battery Status API, Proximity Events, Ambient Light Events, Near Field Communications, etc.</em></p>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h2>Performance</h2>
+                        <p class="fragment"><strong>Javascript is an interpreted language</strong><br><em class="fragment">Abstraction from underlying hardware at cost of performance</em></p>
+                        <p class="fragment"><strong>Advances are coming with each browser release</strong><br><em class="fragment">OdinMonkey can run Unreal Engine 3</em></p>
+                        <p class="fragment"><strong>Many things still feel hacky</strong><br><em><span class="fragment">Animating with CSS</span><br><span class="fragment">Mobile click events</span><br><span class='fragment'>etc.</span></em></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Not Everyone is Convinced</h2>
+                    </section>
+                    
+                    <section>
+                        <h2>LinkedIn</h2>
+                        <p class="fragment">Kiran Prasad, Senior Director for Mobile Engineering:</p>
+                        <p class="fragment"><em>more people are spending more time in the app,<br>and the app is running out of memory</em></p>
+                        <p class="fragment"><em>trying to get... [animation] smoothness...<br>felt like we needed native to really do that well</em></p>
+                        <p class="fragment"><em>There are a few things that are critically missing... <br>tooling support ... debugger that works ... performance tools</em></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Facebook</h2>
+                        <p class="fragment">Mark Zuckerberg, Chief Executive Officer:</p>
+                        <p class="fragment"><em>The biggest mistake we made as a company<br>was betting too much on HTML5 rather than native</em></p>
+                        <p class="fragment"><em>It's so clearly the wrong strategy for us...<br>sounds juicy... [but] it doesn't move the needle for us</em></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Still, there's hope!</h2>
+                        <p class="fragment">Jo Rabin, W3C Mobile Web Platform Community Group:</p>
+                        <p class="fragment"><em>As web capabilities and the coherence of web standards improve, there will be no reason to write… applications using anything other than web technologies</em></p>
+                        <p class="fragment"><em><strong>To my mind it’s a question of manifest destiny</strong></em></p>
+                    </section>
+                    
+                </section>
+                
+                <section>
+                    
+                    <section>
+                        <h1>Getting to HTML 5</h1>
+                    </section>
+                    
+                    <section>
+                        <h2>How's It Made?</h2>
+                        <p class="fragment"><strong>Over 20 years and 5 editions old</strong></p>
+                        <p class="fragment"><em>and yet stuff from 1990 still works
+                            <br><span class="fragment">even though no browser from 1990 still exists</span></em>
+                        </p>
+                        <p class="fragment"><strong>Formed by discussion and debate</strong></p>
+                        <p class="fragment"><em>Browser makers
+                                <br>Authors
+                                <br>Standards folks
+                                <br>Others</em></p>
+                        <p class="fragment"><strong>Not always smooth going</strong></p>
+                    </section>
+                    
+                    <section>
+                        <h2>A Fresh Start after HTML 4</h2>
+                        <p class="fragment">W3C shipped HTML 4.0 in Dec 1997
+                            <br>and shut down the HTML Working Group</p>
+                        <p class="fragment">"Fresh start" announced based on XML tag-set</p>
+                    </section>
+                    
+                    <section>
+                        <h2>A Fumble with XHTML 1.0</h2>
+                        <p class="fragment"><strong>XHTML Extended Forms in August 1999 sets the tone</strong></p>
+                        <p class="fragment"><em>Goals for the next generation…
+                                <br>are incompatible with preserving
+                                <br>backwards compatibility</em></p>
+                        <p class="fragment"><strong>Appendix C "loophole"</strong></p>
+                        <p class="fragment"><em>Use something that looks kind of like XHTML syntax,
+                                <br>but keep serving... text/html MIMEtype</em></p>
+                        <p class="fragment"><strong>And that's what everyone did</strong></p>
+                    </section>
+                    
+                    <section>
+                        <h2>The Failing of XHTML 1.1</h2>
+                        <p class="fragment">W3C publishes XHTML 1.1 in May 2001</p>
+                        <p class="fragment">Closes Appendix C loophole</p>
+                        <p class="fragment">Draconian error handling
+                            <br><em>XML must be well-formed
+                            <br>99% of HTML pages have errors</em></p>
+                        <p class="fragment"><strong>Never gains wide-spread use</strong></p>
+                    </section>
+                    
+                    <section>
+                        <h2>A Fissure in the Community</h2>
+                        <p class="fragment">Mozilla and Opera present a competing vision</p>
+                        <ol style='font-style: italic; margin-bottom: 12px;'><li class="fragment">Backwards compatibility with clear migration path</li>
+                            <li class="fragment">Well-defined error handling</li>
+                            <li class="fragment">User should not be exposed to authoring mistakes</li>
+                            <li class="fragment">Practical use</li>
+                            <li class="fragment">Scripting is here to stay</li>
+                            <li class="fragment">Device-specific proviling should be avoided</li>
+                            <li class="fragment">Open processes</li>
+                        </ol>
+                        <p class="fragment"><strong>W3C refuses to devote resources</strong><br><span class="fragment">Web Hypertext Application Technology WG is born</span></p>
+                    </section>
+                    
+                    <section>
+                        <h2>WHATWG Forges Ahead</h2>
+                        <p class="fragment"><strong>Won't break backwards compatibility</strong></p>
+                        <p class="fragment"><strong>Doesn't scrap the past</strong>
+                            <br><em class="fragment">"Retrospec" what's already there</em></p>
+                        <p class="fragment"><strong>Designs forgiving error handling</strong>
+                            <br><em class="fragment">based on what's already there</em></p>
+                        <p class="fragment"><strong>Early products include</strong>
+                            <br><em class="fragment">Web Forms 2.0</em>
+                            <br><em class="fragment">Canvas</em>
+                            <br><em class="fragment">Audio and Video</em></p></p>
+                    </section>
+                    
+                    <section>
+                        <h2>WHATWG and W3C Reunite</h2>
+                        <p class="fragment">XHTML wasn't picking up steam
+                            <br><span class="fragment">and shipped code wins</span></p>
+                        <p class="fragment">In October 2006, W3C announces it will
+                            <br><span class="fragment">work with WHATWG</span>
+                            <br><span class="fragment">rename Web Applications 1.0 to HTML 5</span></p>
+                        <p class="fragment">XHTML 2 is abandoned in October 2009</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Today</h2>
+                        <p class="fragment">WHATWG maintains "HTML Living Standard"</p>
+                        <p class="fragment">W3C defines snapshots such as HTML 5.0 and 5.1</p>
+                        <p class="fragment">Relationship is still evolving</p>
+                    </section>
+                    
+                </section>
+                
+                <section>
+                    
+                    <section>
+                        <h1>HTML 5 (and Friends)</h1>
+                    </section>
+                    
+                    <section>
+                        <h2>Official Definition</h2>
+                        <div class="fragment">
+                        <p>Web Applications 1.0</p>
+                        <p>Web Forms 2.0</p>
+                        <p>Web Controls 1.0</p>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h2>Elements of HTML 5</h2>
+                        <p><img src="img/html5-periodic-table.jpg"></p>
+                        <p><small><a href="http://joshduck.com/periodic-table.html" target="_blank">http://joshduck.com/periodic-table.html</a></small></p>
+                    </section>
+                    
+                    <section>
+                        <h2>New Form Features</h2>
+                        <p class="fragment">Input Types and Control Features</p>
+                        <p class="fragment">Validation Expressions</p>
+                        <p class="fragment">Templating and Deleting</p>
+                    </section>
+                    
+                    <section>
+                        <h2>HTML 5 as an Ecosystem</h2>
+                        <p><img src="img/html5-ecosystem.png" style="height:75%"></p>
+                    </section>
+                    
+                    <section>
+                        <h2>CSS 3</h2>
+                        <p class="fragment">Tackled as modules</p>
+                        <p class="fragment"><strong>Formal Recommendations</strong><br><em>Media Queries, Namespaces Module, Selectors Level 3, Color Module Level 3</em></p>
+                        <p class="fragment"><strong>Candidate Recommendations</strong><br><em>Backgrounds and Borders Module Level 3, Multi-column Layout Module, Values and Units Module Level 3</em></p>
+                        <p class="fragment"><strong>Working Drafts</strong><br><em>Grid Layout Module Level 1, Template Layout Module, Shapes Module Level 1</em></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Media</h2>
+                        <p class="fragment">SVG</p>
+                        <p class="fragment">Adaptive Images</p>
+                        <p class="fragment">WebGL</p>
+                        <p class="fragment">HTTP Live Streaming</p>
+                    </section>
+                    
+                    <section>
+                        <h2>And Many More</h2>
+                        <p class="fragment">WAI-ARIA</p>
+                        <p class="fragment">IndexedDB</p>
+                        <p class="fragment">Native Access</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Performance</h2>
+                        <p class="fragment">
+                            <strong>Threading</strong>
+                            <br><em class="fragment">Canvas proxy</em>
+                            <br><em class="fragment">Web Workers</em>
+                        </p>
+                        <p class="fragment">
+                            <strong>Hardware-accelerated Effects</strong>
+                            <br><em class="fragment">CSS Transitions and Animations</em>
+                            <br><em class="fragment">Web Animations 1.0</em>
+                            <br><em class="fragment">WebGL</em>
+                        </p>
+                        <p class="fragment">
+                            <strong>Telemtry Exposure</strong>
+                            <br><em class="fragment">Battery Status API</em>
+                            <br><em class="fragment">Timing APIs</em>
+                            <br><em class="fragment">Visibility API</em>
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <h2>Native Access</h2>
+                        <p class="fragment"><strong>Numerous APIs in the works</strong></p>
+                        <table style="width:100%; font-style:italic" class="fragment">
+                            <tr>
+                                <td style="text-align:center; width:60%;">
+                                    Media Capture
+                                    <br>Speech
+                                    <br>Touch Events
+                                    <br>DeviceOrientation Events
+                                    <br>Proximity Events
+                                    <br>Ambient Light Events
+                                    <br>Near Field Communication
+                                </td>
+                                <td style="text-align:center; width:40%;">
+                                    Web Notifications
+                                    <br>File API
+                                    <br>Contacts API
+                                    <br>Calendar API
+                                    <br>Geolocation API
+                                    <br>Vibration API
+                                    <br>GeolocationAPI
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                    <section>
+                        <h2>When is HTML 5 Official?</h2>
+                        <p class="fragment">W3C spec development is laborious</p>
+                        <p class="fragment"><em>Infinite last call / formal objection cycle</em></p>
+                        <p class="fragment">Process is changing</p>
+                        <p class="fragment">
+                            <em>Modularizing with Extension Specifications</em>
+                            <br><em class="fragment">Splitting work into HTML 5.0 and 5.1</em>
+                        </p>
+                        <p class="fragment"><strong>HTML 5.0 Formal Recommendation by end of 2014</strong></p>
+                    </section>
+                    
+                    <section>
+                        <h2>What about HTML 5.1?</h2>
+                        <p class="fragment">Getting HTML 5 out the door meant dropping things</p>
+                        <p class="fragment">Picks up where HTML 5 left off</p>
+                        <p class="fragment"><em>All features of HTML 5 Candidate Recommendation
+                                <br>Plus unstable features that were excluded</em></p>
+                        <p class="fragment"><strong>HTML 5.1 Formal Recommendation by end of 2016</strong></p>
+                    </section>
+                    
+                </section>
+                
+                <section>
+                    
+                    <section>
+                        <h1>Looking to the Future</h1>
+                    </section>
+                    
+                    <section>
+                        <h2>Work is already underway</h2>
+                        <p class="fragment">HTML.next</p>
+                        <p class="fragment">CSS 4</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Web Components</h2>
+                        <p class="fragment"><strong>Rich Widget Library</strong></p>
+                        <p class="fragment"><code>template</code>
+                            <br><code class="fragment">decorator</code>
+                            <br><code class="fragment">content</code>
+                            <br><code class="fragment">element</code></p>
+                        <p class="fragment"><small><a href='https://dvcs.w3.org/hg/webcomponents/raw-file/tip/explainer/index.html' target='_blank'>dvcs.w3.org/hg/webcomponents/raw-file/tip/explainer/index.html</a></small></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Web Intents</h2>
+                        <p class="fragment">Client-side service discovery</p>
+                        <p class="fragment">Inter-app communication</p>
+                        <p class="fragment"><small><a href='http://webintents.org' target='_blank'>webintents.org</a></small></p>
+                    </section>
+                    
+                    <section>
+                        <h2>IndieUI</h2>
+                        <p class="fragment">Abstraction between device interaction and inferred intent</p>
+                        <p class="fragment">The undo command...
+                            <br><em class="fragment">CTRL+Z on Windows/Linux
+                                <br>CMD+Z on Mac OS X
+                                <br>Shake on some mobile devices</em></p>
+                        <p class="fragment"><strong>Break down the device barrier</strong></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Media</h2>
+                        <p class="fragment">Responsive and Adaptive Images</p>
+                        <p class="fragment">Adaptive Streaming</p>
+                        <p class="fragment">Full-screen and Screenshots</p>
+                    </section>
+                    
+                    <section>
+                        <h2>CSS 4</h2>
+                        <p class="fragment">Ascending selector</p>
+                        <p class="fragment">Numerous pseudo-selectors</p>
+                        <p><code class="fragment">:matches</code>
+                            <br><code class="fragment">:local-link</code>
+                            <br><code class="fragment">:scope</code>
+                            <br><span class="fragment"><code>:nth-match</code>, <code>:nth-last-match</code></span>
+                            <br><span class="fragment"><code>:column</code>, <code>:nth-column</code>, <code>:nth-last-column</code></span></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Get Involved</h2>
+                        <p class="fragment">Contribute your own ideas for HTML.next<br><a href='http://www.w3.org/wiki/HTML/next' target='_blank'>http://www.w3.org/wiki/HTML/next</a></p>
+                    </section>
+                    
+                    <section>
+                        <h2>Web 3.0</h2>
+                        <div class="fragment">
+                        <p><em>The intelligent Web<span style="font-size:2px;"><br></span>- such as… semantic web, miroformats, natural language search, data-mining, machine learning, recommendation agents and artificial intelligence technologies -<span style="font-size:2px;"><br></span>[will] emphasize machine-facilitated understanding
+                        </em></p>
+                        <p><cite>John Markoff, New York Times, 2006</cite></p>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h2>Expading Web 3.0</h2>
+                        <p class="fragment">Ubiquitous connectivity</p>
+                        <p class="fragment">Service accessibility</p>
+                        <p class="fragment">Semantic web technologies</p>
+                        <p class="fragment">Distributed computing and databases</p>
+                        <p class="fragment">Open identity, reputations and data</p>
+                        <p class="fragment">Intelligent applications</p>
+                    </section>
+                    
+                </section>
+
+                <section>
+                    <h1>Thank You</h1>
+                    <h3>for your time</h3>
+                    <p><br><a href="http://ebollens.github.io/presentations/scrum" target="_blank">http://ebollens.github.io/presentations/web-today-future</a></p>
+                    <br>
+                    <p>
+                        <small>
+                            <a href="https://github.com/ebollens" target="_blank">ebollens [GitHub]</a> 
+                            / <a href="https://linkedin.com/in/ebollens" target="_blank">ebollens [LinkedIn]</a> 
+                            / <a href="http://twitter.com/ericbollens" target="_blank">@ericbollens [Twitter]</a>
+                        </small>
+                    </p>
+                </section>
+
+            </div>
+
+        </div>
+        
+        <style>
+            .slides p {
+                padding-top: 0.25em;
+            }
+            .slides p.tight {
+                padding-top: 0;
+                margin-top: 0;
+            }
+        </style>
+
+        <script src="../lib/js/head.min.js"></script>
+        <script src="../js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                        { src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: '../plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                        { src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                        { src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                        // { src: '../plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                        // { src: '../plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
