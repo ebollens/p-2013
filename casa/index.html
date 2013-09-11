@@ -50,6 +50,7 @@
                     </p>
                 </section>
                 
+                <!--
                 <section>
                     <section>
                         <h2>Conundrum of Growth</h2>
@@ -62,69 +63,120 @@
                         <h3>Build on a familiar pattern</h3>
                         <h2 class='fragment'>The App Store</h2>
                     </section>
-                </section>
-                <section>
                     <section>
                         <h2>Enabling a rich ecosystem</h2>
                         <p class='fragment'>Not every app we produce is campus-specific</p>
                         <p class='fragment'>And why limit our audience to only our own apps?</p>
                     </section>
+                </section>
+                -->
+                
+                <section>
                     <section>
-                        <h2>Sharing Apps</h2>
-                        <p class='fragment'><em><strong>Traditionally...</strong></em></p>
-                        <p class='fragment'>Each organization contacts each affiliate<br>
-                        <span class='fragment'>Requires <code>(1/2)*N*(N-1)</code> connections to be complete</span></p>
-                        <p class='fragment'><em><strong>Alternatively...</strong></em></p>
-                        <p class='fragment'>Aggregator acts as a repository of apps<br>
-                        <span class='fragment'>Requires homogenous world view and centralized trust</span></p>
+                        <h2>The Approach</h2>
+                    </section>
+                    <section>
+                        <h2>Search is not Sufficient</h2>
+                        <p class="fragment">The World Wide Web is vast and uncurated</p>
+                        <p class="fragment"><strong>Limited ability to identify capabilities and relevancy</strong></p>
+                        <p class="fragment"><em>Device support</em>
+                            <br><em class='fragment'>Interoperability</em>
+                            <br><em class='fragment'>World view</em></p>
+                        <p class="fragment">A model that already does this well...
+                            <br><strong class="fragment">App Stores</strong></p>
+                    </section>
+                    <section>
+                        <h2>Web App Stores</h2>
+                        <p class='fragment'>Several implementations in the wild
+                            <br><span class='fragment'><strong>but we're not quite there yet</strong></span></p>
+                        <p class='fragment'><strong><a href='http://mwf.ucla.edu' target='_blank'>The Mobile Web Framework</a></strong></p>
+                        <p><em class='fragment'>Each organization contacts peers for apps</em>
+                            <br><em class='fragment'><code>(1/2)*N*(N-1)</code> connections to be complete</em></p>
+                        <p class='fragment'><strong><a href='http://edu-apps.org' target='_blank'>Edu Apps</a></strong></p>
+                        <p><em class='fragment'>Aggregator that acts as a central repository of apps</em>
+                            <br><em class='fragment'>Homogenous world view and centralized trust</em></p>
+                    </section>
+                    <section>
+                        <h2>An Alternative Approach</h2>
+                        <p class='fragment'><strong>The Peer-to-Peer Model</strong></p>
+                        <p class='fragment'><em>Establish peering relationships</em>
+                            <br><em class='fragment'>Share apps with others</em>
+                            <br><em class='fragment'>Learn about apps from others</em>
+                            <br><em class='fragment'><strong>Allow apps to propagate</strong></em></p>
+                    </section>
+                    <section>
+                        <h2>Don't Start from Scratch</h2>
+                        <p class='fragment'>The Internet already provides an example</p>
+                        <p><strong class='fragment'>Border Gateway Protocol</strong></p>
+                        <p class='fragment'>Used by autonomous systems to communicate routes</p>
+                        <p class='fragment'><strong>Superset of both sharing models</strong></p>
+                        <p class='fragment'><em>Decentralized topology at core</em>
+                            <br><em class='fragment'>Star topologies in subgraphs</em></p>
+                        <p class='fragment'><strong>Leads to a small-world network</strong></p>
+                    </section>
+                    <section>
+                        <h2>Small-world Networks</h2>
+                        <img src='img/small-world-graph.jpg' style='height: 50%;'>
+                        <p class='fragment'><strong>Propagation efficiency</strong> is <code><span style='font-size:0.25em;'>&nbsp;</span>L<span style='font-size:0.5em;'>&nbsp;</span>α<span style='font-size:0.5em;'>&nbsp;</span>log<span style='font-size:0.5em;'>&nbsp;</span>N</code></em>
+                            <br><span class='fragment'><strong>Adjacent nodes</strong> are defined autonomously</span></p>
                     </section>
                 </section>
                 
                 <section>
                     <section>
-                        <h3>Modeling the Real World</h3>
-                        <h2 class='fragment'>Peer-to-Peer Ecosystem</h2>
+                        <h2>The Architecture</h2>
                     </section>
                     <section>
-                        <h2>Premise</h2>
-                        <p class='fragment'>Each organization becomes a peer</p>
-                        <p class='fragment'><em>Share apps with others<br><span class='fragment'>Learn about apps from others</span></em></p>
-                        <p class='fragment'>Functions to model human decisions</p>
+                        <h2>Apps</h2>
+                        <p class='fragment'><strong>Represented by metadata</strong></p>
+                        <p class='fragment'><em>Identity</em>
+                            <br><em class='fragment'>URI and Author</em>
+                            <br><em class='fragment'>Timestamp</em>
+                            <br><em class='fragment'>Share and Propagate</em>
+                            <br><em class='fragment'>Required Attributes</em>
+                            <br><em class='fragment'>Optional Attributes</em></p>
+                        <p class='fragment'><strong>Highly extensible structure</strong></p>
+                    </section>
+                    <section>
+                        <h2>Peering Relationships</h2>
+                        <p class='fragment'>Define <strong>inbound</strong> and <strong>outbound</strong> peers</p>
+                        <p class='fragment'>Support for <strong>asymmetric</strong> relationships</p>
                     </section>
                     <section>
                         <h2>Discovering Apps</h2>
-                        <p class='fragment'>Define <strong>peering relationships</strong></p>
-                        <p class='fragment'>Set <strong>filters</strong> for apps you're willing to accept</p>
-                        <p class='fragment'>Configure <strong>transforms</strong> that modify app metadata</p>
-                        <p class='fragment'>Present <strong>apps</strong> from your organization and elsewhere</p>
+                        <p class='fragment'><strong>Query</strong> inbound peers for apps</p>
+                        <p class='fragment'><strong>Filters</strong> for apps you're willing to accept</p>
+                        <p class='fragment'><strong>Transforms</strong> app metadata</p>
+                        <p class='fragment'><strong>Present</strong> to outlets</p>
                     </section>
                     <section>
                         <h2>Sharing Apps</h2>
-                        <p class='fragment'><strong>Share</strong> your apps</p>
-                        <p class='fragment'><strong>Propagate</strong> apps you've discovered</p>
-                        <p class='fragment'><em>with peering relationships, filters and transforms</em></p>
+                        <p class='fragment'><strong>Abide</strong> by outbound peer, filter and transform settings</p>
+                        <p class='fragment'><strong>Share</strong> apps originated by the peer</p>
+                        <p class='fragment'><strong>Propagate</strong> apps marked for propagation</p>
                     </section>
                 </section>
                 
                 <section>
                     <section>
-                        <h2>Community App Store Architecture</h2>
+                        <h2>The Constituents</h2>
                     </section>
                     <section>
                         <h2>Protocol</h2>
                         <p class='fragment'><a href='https://github.com/uShare/protocol/blob/master/protocol.md' target='_blank'>github.com/uShare/protocol/blob/master/protocol.md</a></p>
-                        <p class='fragment'>Represents app metadata</p>
-                        <p class='fragment'>Flexible and extensible structure</p>
-                        <p class='fragment'>Attribute mapping between UUID and name</p>
-                        <p class='fragment'>Journalled history for attributes</p>
+                        <p class='fragment'><em>Attribute mapping between UUID and name</em>
+                            <br><em class='fragment'>Extensible for new metadata structures</em>
+                            <br><em class='fragment'>Journalled history of attribute transformations</em></p>
                     </section>
                     <section>
                         <h2>Engine</h2>
                         <p class='fragment'><a href='https://raw.github.com/uShare/protocol/master/architecture.pdf'>raw.github.com/uShare/protocol/master/architecture.pdf</a></p>
-                        <p class='fragment'>Shares with and discovers from peers</p>
-                        <p class='fragment'>In-bound and out-bound filter and transform rules</p>
-                        <p class='fragment'>Translation between UUIDs and names</p>
-                        <p class='fragment'>Provides simple form of app metadata for outlets</p>
+                        <p class='fragment'><em>When receiving apps</em></p>
+                        <p class='fragment'><strong>Translate</strong> UUIDs
+                            <br><span class='fragment'><strong>Squash</strong> journal</span>
+                            <br><span class='fragment'><strong>Filter</strong> apps</span>
+                            <br><span class='fragment'><strong>Transform</strong> metadata</span></p>
+                        <p class='fragment'><em>Reverse process for sharing</em></p>
                     </section>
                     <section>
                         <h2>Outlets</h2>
@@ -132,7 +184,6 @@
                         <p><em class='fragment'>Mobile dashboard</em>
                             <br><em class='fragment'>LMS tools</em>
                             <br><em class='fragment'>Campus portal</em>
-                            <br><em class='fragment'>etc.</em>
                         </p>
                         <p class='fragment'>Query engine for current apps</p>
                         <p class='fragment'>Present relevant apps to end users</p>
@@ -145,30 +196,19 @@
                 <section>
                     <section>
                         <h2>Current Status</h2>
-                        <p class='fragment'><strong>Collaboration with the IMS Global Learning Consortium</strong>
-                            <br><a href='http://www.imsglobal.org/pressreleases/pr130409.html' target='_blank'>imsglobal.org/pressreleases/pr130409.html</a></p>
                         <p class='fragment'><strong>Protocol Document</strong>
                             <br><a href='https://github.com/uShare/protocol/blob/master/protocol.md' target='_blank'>github.com/uShare/protocol/blob/master/protocol.md</a></p>
                         <p class='fragment'><strong>Architecture Diagram</strong>
                             <br><a href='https://raw.github.com/uShare/protocol/master/architecture.pdf'>raw.github.com/uShare/protocol/master/architecture.pdf</a></p>
                         <p class='fragment'><strong>Reference Implementation</strong>
-                            <br><em>Engine and LTI App Store Under Development</em></p>
-                    </section>
-                </section>
-                
-                <section>
-                    <section>
-                        <h3>And Also...</h3>
-                        <h2>Mobility and the Modern<br>Web Conference</h2>
-                        <h3>September 10 - 12</h3>
-                        <h3><strong><a href='http://mmwcon.org' target='_blank'>mmwcon.org</a></strong></h3>
+                            <br><em>Development pending for Engine and LTI App Store</em></p>
                     </section>
                 </section>
 
                 <section>
                     <h1>THANK YOU</h1>
                     <h3>Any Questions?</h3>
-                    <p><br><a href="http://ebollens.github.io/presentations/casa" target="_blank">http://ebollens.github.io/presentations/casa</a></p>
+                    <p><br><a href="http://ebollens.github.io/presentations/casa" target="_blank">ebollens.github.io/presentations/casa</a></p>
                     <br>
                     <p>
                         <small>
