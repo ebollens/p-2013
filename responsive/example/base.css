@@ -1,0 +1,53 @@
+body > header {
+    margin-bottom: 3px;
+}
+
+body > header h1 {
+    overflow: hidden;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+body > header img {
+    margin: 6px;
+}
+
+/* Support for HTML 5.1 main element polyfill for modern browsers */
+main {
+    display: block; 
+}
+
+#container {
+    overflow: auto;
+    _zoom: 1; /* triggers hasLayout in IE6 */
+}
+
+body > header {
+    background-color: #c4deed;
+}
+
+#container > nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} 
+
+body > header, #container > nav li, #container {
+    margin-bottom: 3px;
+}
+
+#container > nav li a {
+    display: block;
+    padding: 6px;
+    background-color: #0d637e;
+    color: #fff;
+}
+
+#container > main h1, #container > main p {
+    margin: 0 0 12px 0;
+}
+
+body > footer {
+    text-align: center;
+}
